@@ -2,37 +2,115 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  background     : #009FFF;
+  background     : -webkit-linear-gradient(to right, #ec2F4B, #009FFF);
+  background     : linear-gradient(to right, #ec2F4B, #009FFF);
+  min-height     : 100vh;
+  display        : flex;
+  flex-direction : column;
+  align-items    : center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size      : 2rem;
+  color          : #ffffff;
 }
 
-.App-link {
-  color: #61dafb;
+.containerBox {
+  position      : relative;
+  float         : left;
+  border-radius : 30px;
+  padding-top   : 25px;
+  padding-bottom: 25px;
+  padding-left  : 30px;
+  padding-right : 30px;
+  position      : relative;
+  width         : 660px;
+  text-align    : center;
+  background    : #784eeb;
+  flex-wrap     : wrap;
+  display       : flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.containerBank {
+  display  : flex;
+  flex-wrap: wrap;
+  width    : 300px;
+}
+
+.containerBank2 {
+  display       : flex;
+  flex-direction: column;
+  text-align    : center;
+  align-items   : center;
+  width         : 300px;
+  font-size     : 1rem;
+}
+
+.btnLetters {
+  background   : #101010;
+  width        : 30px;
+  height       : 40px;
+  padding      : 10px 25px;
+  border       : 2px solid #000;
+  font-family  : 'Lato', sans-serif;
+  font-size    : 1.5rem;
+  background   : black;
+  cursor       : pointer;
+  transition   : all 0.3s ease;
+  position     : relative;
+  display      : inline-block;
+  margin-left  : 10px;
+  margin-right : 5px;
+  border-radius: 15px;
+}
+
+.button-play {
+  width      : 60px;
+  height     : 30px;
+  background : #A5ED3E;
+  font-family: 'Lato', sans-serif;
+  font-size  : 1rem;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  margin: 10px;
+}
+
+.button-clear {
+  width      : 60px;
+  height     : 30px;
+  background : #F75348;
+  font-family: 'Lato', sans-serif;
+  font-size  : 1rem;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+}
+
+.btn {
+  transition: all 0.3s ease;
+  overflow  : hidden;
+}
+
+.btn:after {
+  position         : absolute;
+  content          : " ";
+  top              : 0;
+  left             : 0;
+  z-index          : -1;
+  width            : 100%;
+  height           : 100%;
+  transition       : all 0.3s ease;
+  -webkit-transform: scale(.1);
+  transform        : scale(.1);
+}
+
+.btn:hover {
+  color: rgb(197, 107, 107);
+}
+
+.btn:hover:after {
+  background       : #000;
+  -webkit-transform: scale(1);
+  transform        : scale(1);
 }
